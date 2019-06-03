@@ -1,0 +1,59 @@
+
+<app-topnavbar></app-topnavbar>
+
+
+<section id="bookings-sect">
+
+  <div class="social-sec">
+      <h2>Join my mailing list for the latest news and exclusive music</h2>
+      <form #userMail = "ngForm" (ngSubmit) = "onClickSubmit(userMail.value)" >
+          <input id="input-email" type = "text" name = "emailid" placeholder = "emailid" ngModel>
+          <input type = "submit" value = "submit">
+      </form>
+
+    <app-sociallinks></app-sociallinks>
+
+  </div>
+
+
+<div id="bookings-content">
+
+
+<h4 class="pic-title">Contact</h4>
+
+    <h6>Booking Agent</h6>
+    <sub>Lorem Ipsum</sub>
+
+    <ul class="contactlist">
+      <li><a href="">www.facebook.com/joemazmusic</a></li>
+      <li><a href="">www.twitter.com/joemaz</a></li>
+      <li><a href="">www.soundcloud.com/joemaz</a></li>
+      <li><a href="">www.instagram.com/joemaz</a></li>
+    </ul>
+
+
+    <h4 class="pic-title">Book or Email me</h4>
+
+  <div id="contact-form" >
+    <div>
+        <input id="input-email" type = "text" name = "emailid" placeholder = "Name" >
+    </div>    
+    <div>
+          <input id="input-email" type = "text" name = "emailid" placeholder = "emailid">
+
+    </div>    
+    <div>
+              <textarea rows="4" cols="50">Message Here</textarea>
+
+    </div>   
+     <div>
+               <input type = "submit" value = "submit" />
+
+    </div>    
+
+
+      </div>
+</div>
+
+
+</section>

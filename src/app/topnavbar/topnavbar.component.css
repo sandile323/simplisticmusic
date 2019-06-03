@@ -1,0 +1,40 @@
+h1 {
+    font-size: 55px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 900;
+    color: #fff ;
+    text-shadow: 1px 4px 0 #d0ad46;    
+    
+}
+
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+    padding: 18px 41px;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+
+}
+
+.appear {
+    opacity: 1;
+    z-index: 10;
+    visibility: visible;
+
+}
+
+app-menu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+

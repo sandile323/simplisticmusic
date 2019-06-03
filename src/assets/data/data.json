@@ -1,0 +1,90 @@
+{
+"albums":
+        [ 
+            {
+                "album_title": "Album_1",
+                "album_release_date": "Fri, 15, 19",
+                "album_cover": "../../assets/dj.jpg",
+                "artist": "Simplistic",
+                "tracks": 
+                        [
+                            {
+                                "track_id": "aa",
+                                "track_title": "Track1",
+                                "track_source": "../../assets/music/Mizz - 3G (1).mp3"
+                            },
+                            {
+                                "track_id": "bb",
+                                "track_title": "Track2",
+                                "track_source": "../../assets/music/Mizz - 3G (2).mp3"
+                            }
+                        ]
+            },
+            {
+                "album_title": "Album_2",
+                "album_release_date": "Fri, 15, 19",
+                "artist": "Simplistic",
+                "album_cover": "../../assets/dj.jpg",
+                "tracks": 
+                        [
+                            {
+                                "track_id": "cc",
+                                "track_title": "Track1",
+                                "track_source": "../../assets/music/Mizz - 3G (3).mp3"
+                            },
+                            {
+                                "track_id": "dd",
+                                "track_title": "Track2",
+                                "track_source": "../../assets/music/Mizz - 3G (2).mp3"
+                            }
+                        ]
+            },
+            {
+                "album_title": "Album_3",
+                "album_release_date": "Fri, 15, 19",
+                "artist": "Simplistic",
+                "album_cover": "../../assets/dj.jpg",
+                "tracks": 
+                        [
+                            {
+                                "track_id": "ee",
+                                "track_title": "Track1",
+                                "track_source": "../../assets/music/Mizz - 3G (3).mp3"
+                            }
+                        ]
+            }
+        ],
+"gigs": [
+    {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    },        {
+        "date": "Fri, 15, 19",
+        "place": "Tembisa",
+        "gigname": "All Black Errthing"
+    }
+]
+     
+
+}

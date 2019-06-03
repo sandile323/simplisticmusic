@@ -1,0 +1,79 @@
+<app-topnavbar></app-topnavbar>
+
+
+<section id="music-intro">
+
+    <div id="music-sec">
+
+  <div class="social-sec">
+      <h2>Join my mailing list for the latest news and exclusive music</h2>
+      <form #userMail = "ngForm" (ngSubmit) = "onClickSubmit(userMail.value)" >
+          <input id="input-email" type = "text" name = "emailid" placeholder = "emailid" ngModel>
+          <input type = "submit" value = "submit">
+      </form>
+
+    <app-sociallinks></app-sociallinks>
+
+  </div>
+
+        <div class="album-list">
+        <h4 class="pic-title">Music</h4>
+
+          <div class="album" *ngFor="let i of albums">
+            <div class="album-detail">
+              <div class="album-cover">
+                <img src="{{i.album_cover}}" width="200" height="200" /> 
+              </div>
+              <div class="album-desc">
+                <p class="album-title">{{i.album_title}}</p>
+                <div class="album-controls">
+                  <input class="download-album-btn" type="submit" value="Download" />
+                  <input class="share-album-btn" type="submit" value="Share" />
+                </div>
+              </div>
+            </div>
+          <div class="album-tracklist">
+            <div class="track" *ngFor="let j of i['tracks']">
+              <audio class="players" id="{{j.track_id}}">
+                <source src="{{j.track_source}}" type="audio/mpeg">
+                <source src="{{j.track_source}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio> 
+              <div class="controls">
+                <div  class="play-button">
+                <div class="left-side">
+                                  <span  (click)="playtrack($event)" [attr.data-target]="j.track_id"  class="playPause"></span>
+                    <h3 class="tracktitle">{{j.track_title}} by {{i.artist}}</h3>
+                </div>
+
+                  <div class="download-track-buttons">
+                    <div class="duration_count">
+                      <span class="progress-timer" id="{{j.track_id + 'progress-timer'}}" [attr.data-target]="j.track_id">00:00:00
+                      </span> /                     
+                      <span class="duration" id="{{j.track_id + 'duration'}}" [attr.data-target]="j.track_id">00:00:00
+                      </span>
+                    </div>                    
+                  <div class="sharebtns-single-track">
+                      <input class="download-track-btn" type="submit" value="Download" />
+                      <span class="share-bt2">
+                        <i class="fas fa-share-square"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class='trackbar'>
+                  <div [attr.data-target]="j.track_id"  class="whole-track"></div>
+                  <div [attr.data-target]="j.track_id" class="track_progress" id="{{j.track_id + 'track_progress'}}"></div>
+                </div>
+               <!--<div [attr.data-target]="j.track_id"  class="whole-track"></div>
+                <div [attr.data-target]="j.track_id" class="track_progress" id="{{j.track_id + 'track_progress'}}"></div>-->
+              </div>
+            </div>
+          </div>
+          </div>
+        <div>
+    
+    </div>
+
+
+<section>

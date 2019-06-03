@@ -1,0 +1,45 @@
+
+<app-topnavbar></app-topnavbar>
+
+
+<section id="intro-section-sec">
+
+  <div class="social-sec">
+      <h2>Join my mailing list for the latest news and exclusive music</h2>
+      <form #userMail = "ngForm" (ngSubmit) = "onClickSubmit(userMail.value)" >
+          <input id="input-email" type = "text" name = "emailid" placeholder = "emailid" ngModel>
+          <input type = "submit" value = "submit">
+      </form>
+
+    <app-sociallinks></app-sociallinks>
+
+  </div>
+
+  <div class="upcoming-gigs">
+
+    <div class="gig-head">
+      <div class="left-side">
+          <span class="gigheading">Upcoming Gigs</span>
+      </div>
+      <div class="right-side">
+          <span class="TS">TS</span>
+      </div>
+    </div>
+
+
+    <div class="gig" *ngFor="let i of gigs">
+      <div class="left-side">
+          <span class="date">{{i.date}}</span>
+          <span class="place">{{i.place}}</span>
+      </div>
+      <div class="right-side">
+          <span class="gigname">{{i.gigname}}</span>
+          <input class="rsvp-btn" type = "submit" value = "RSVP">
+          <input class="notify-btn" type = "submit" value = "Notify Me">
+      </div>
+    </div>
+
+  </div>
+
+
+</section>

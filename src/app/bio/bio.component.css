@@ -1,0 +1,73 @@
+.pic-title {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 30px;
+    padding: 10px 36px;
+  
+  }
+  
+  .gallery-intro {
+    display: flex;
+  
+    flex-direction: column;
+    
+    align-items: center;
+  
+  }
+  
+  .intro-image-pics {
+  
+    width: 35%;
+    padding-top: 40px;
+  }
+  
+  .gallery-intro > sub {
+    font-family: 'Raleway', sans-serif;
+  
+    color: #fff;
+    font-size: 23px;
+    margin: 20px 0;
+  
+  }
+
+  #bio-sect {
+    padding-bottom: 100px;
+    height: auto;
+    padding-top: 8%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 3;
+    background-image: url(../../assets/muse3.png);
+    position: relative;
+  
+  }
+  
+  #bio-sect::after {
+  
+    content: "";
+    box-shadow: 12px -3px 9px black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    background: #000000d9;
+  }
+
+
+  h2 {
+    color: #d0ad46;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;
+  
+  }
+  
+  #bio-content > p {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    padding: 10px 36px;
+
+}

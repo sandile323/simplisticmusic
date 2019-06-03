@@ -1,0 +1,29 @@
+ 
+ 
+<app-topnavbar></app-topnavbar>
+
+<section id="gallery-sect">
+   <div class="social-sec">
+      <h2>Join my mailing list for the latest news and exclusive music</h2>
+      <form #userMail = "ngForm" (ngSubmit) = "onClickSubmit(userMail.value)" >
+          <input id="input-email" type = "text" name = "emailid" placeholder = "emailid" ngModel>
+          <input type = "submit" value = "submit">
+      </form>
+
+        <div class="gallery-intro">
+            <img src="../../assets/tshepo-gallery.jpg" class="intro-image-pics" />
+            <sub>Tshepo Mkhonza (Simplistic TS)</sub>
+        </div>
+
+
+    <app-sociallinks></app-sociallinks>
+
+  </div>
+
+
+<h4 class="pic-title">Pics</h4>
+ <div id="gal-content">
+</div>
+
+
+</section>
